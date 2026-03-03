@@ -1,0 +1,153 @@
+{
+  "training_results": {
+    "Stage4_All_Blocks": {
+      "map_label": "Stage4_All_Blocks",
+      "is_multiblock": true,
+      "blocks": [
+        {
+          "map": "highway-v0",
+          "traffic": 0.35,
+          "label": "HighwayFast"
+        },
+        {
+          "map": "merge-v0",
+          "traffic": 0.4,
+          "label": "MergeTight"
+        },
+        {
+          "map": "intersection-v0",
+          "traffic": 0.4,
+          "label": "IntersectionFull"
+        },
+        {
+          "map": "roundabout-v0",
+          "traffic": 0.45,
+          "label": "RoundaboutHeavy"
+        }
+      ],
+      "description": "highway-v0 (rho=0.35) -> merge-v0 (rho=0.40) -> intersection-v0 (rho=0.40) -> roundabout-v0 (rho=0.45)",
+      "timesteps_used": 100000,
+      "max_timesteps": 100000,
+      "min_timesteps": 60000,
+      "success_threshold": 0.9,
+      "met_threshold": false,
+      "mean_reward": 240.66116333007812,
+      "std_reward": 25.520578384399414,
+      "traffic_density": 0.35,
+      "success_rate": 0.4,
+      "collision_rate": 0.6,
+      "completion_rate": 1.0,
+      "training_time": 2728.2188923358917,
+      "eval_time": 0.0
+    }
+  },
+  "test_results": {
+    "intersection-v0_Novel_Low_holdout": {
+      "map_name": "intersection-v0",
+      "test_type": "Novel_Low",
+      "is_novel_map": true,
+      "is_multiblock": false,
+      "mean_reward": 15.70799732208252,
+      "std_reward": 7.086521625518799,
+      "traffic_density": 0.15,
+      "success_rate": 0.6,
+      "collision_rate": 0.4,
+      "completion_rate": 0.45500000000000007,
+      "eval_time": 3.4329397678375244
+    },
+    "intersection-v0_Novel_Medium_holdout": {
+      "map_name": "intersection-v0",
+      "test_type": "Novel_Medium",
+      "is_novel_map": true,
+      "is_multiblock": false,
+      "mean_reward": 15.70799732208252,
+      "std_reward": 7.086521625518799,
+      "traffic_density": 0.25,
+      "success_rate": 0.6,
+      "collision_rate": 0.4,
+      "completion_rate": 0.45500000000000007,
+      "eval_time": 3.013209819793701
+    },
+    "intersection-v0_Novel_High_holdout": {
+      "map_name": "intersection-v0",
+      "test_type": "Novel_High",
+      "is_novel_map": true,
+      "is_multiblock": false,
+      "mean_reward": 15.70799732208252,
+      "std_reward": 7.086521625518799,
+      "traffic_density": 0.35,
+      "success_rate": 0.6,
+      "collision_rate": 0.4,
+      "completion_rate": 0.45500000000000007,
+      "eval_time": 4.923877954483032
+    },
+    "Stage4_AllBlocks_Composite_Stress_holdout": {
+      "map_name": "Stage4_AllBlocks",
+      "test_type": "Composite_Stress",
+      "is_novel_map": false,
+      "is_multiblock": true,
+      "mean_reward": 272.0246887207031,
+      "std_reward": 22.142471313476562,
+      "traffic_density": 0.4,
+      "success_rate": 0.4,
+      "collision_rate": 0.6,
+      "completion_rate": 1.0,
+      "eval_time": 55.69108724594116
+    },
+    "merge-v0_Seen_High_holdout": {
+      "map_name": "merge-v0",
+      "test_type": "Seen_High",
+      "is_novel_map": false,
+      "is_multiblock": false,
+      "mean_reward": 39.57941436767578,
+      "std_reward": 19.565961837768555,
+      "traffic_density": 0.5,
+      "success_rate": 0.4,
+      "collision_rate": 0.6,
+      "completion_rate": 0.765,
+      "eval_time": 7.686028480529785
+    },
+    "roundabout-v0_Seen_High_holdout": {
+      "map_name": "roundabout-v0",
+      "test_type": "Seen_High",
+      "is_novel_map": false,
+      "is_multiblock": false,
+      "mean_reward": 30.18222999572754,
+      "std_reward": 9.233283996582031,
+      "traffic_density": 0.35,
+      "success_rate": 0.8,
+      "collision_rate": 0.2,
+      "completion_rate": 0.8800000000000001,
+      "eval_time": 18.125243425369263
+    }
+  },
+  "cumulative_timesteps": 100000,
+  "total_training_time": 2728.2188923358917,
+  "training_time_per_timestep": 0.027282188923358916,
+  "metrics_summary": {
+    "training": {
+      "total_episodes": 365,
+      "mean_episode_reward": 187.00122748767126,
+      "final_episode_reward": 279.749701,
+      "mean_episode_length": 273.64931506849314
+    },
+    "evaluation": {
+      "evaluations_performed": 0,
+      "final_mean_reward": 0,
+      "best_mean_reward": 0,
+      "mean_success_rate": 0.0
+    },
+    "timing": {
+      "train_composite": {
+        "total": 2728.2188923358917,
+        "mean": 136.41094461679458,
+        "count": 20
+      },
+      "eval_composite_chunk": {
+        "total": 575.8537862300873,
+        "mean": 28.792689311504365,
+        "count": 20
+      }
+    }
+  }
+}

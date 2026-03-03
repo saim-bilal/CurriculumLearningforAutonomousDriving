@@ -1,0 +1,274 @@
+{
+  "stage_results": {
+    "Stage1_Highway_Low": {
+      "blocks": [
+        {
+          "map": "highway-v0",
+          "traffic": 0.2,
+          "label": "HighwayLow"
+        }
+      ],
+      "shuffle": false,
+      "timesteps_used": 25000,
+      "max_timesteps": 25000,
+      "min_timesteps": 12500,
+      "success_threshold": 0.8,
+      "best_success": 0.6,
+      "met_threshold": false,
+      "final_eval": {
+        "mean_reward": 132.8895263671875,
+        "std_reward": 57.344696044921875,
+        "mean_length": 134.2,
+        "success_rate": 0.4,
+        "collision_rate": 0.6,
+        "completion_rate": 1.0,
+        "avg_speed": 29.875032279551213
+      },
+      "training_time": 483.25807881355286
+    },
+    "Stage2_Highway_Merge": {
+      "blocks": [
+        {
+          "map": "highway-v0",
+          "traffic": 0.25,
+          "label": "HighwayMid"
+        },
+        {
+          "map": "merge-v0",
+          "traffic": 0.3,
+          "label": "MergeIntro"
+        }
+      ],
+      "shuffle": false,
+      "timesteps_used": 25000,
+      "max_timesteps": 25000,
+      "min_timesteps": 12500,
+      "success_threshold": 0.82,
+      "best_success": 0.0,
+      "met_threshold": false,
+      "final_eval": {
+        "mean_reward": 120.1153335571289,
+        "std_reward": 33.355384826660156,
+        "mean_length": 122.8,
+        "success_rate": 0.0,
+        "collision_rate": 1.0,
+        "completion_rate": 1.0,
+        "avg_speed": 29.840187089358313
+      },
+      "training_time": 578.1406488418579
+    },
+    "Stage3_Highway_Merge_Intersection": {
+      "blocks": [
+        {
+          "map": "highway-v0",
+          "traffic": 0.3,
+          "label": "HighwayDense"
+        },
+        {
+          "map": "merge-v0",
+          "traffic": 0.35,
+          "label": "MergeDense"
+        },
+        {
+          "map": "intersection-v0",
+          "traffic": 0.35,
+          "label": "IntersectionIntro"
+        }
+      ],
+      "shuffle": false,
+      "timesteps_used": 20000,
+      "max_timesteps": 25000,
+      "min_timesteps": 12500,
+      "success_threshold": 0.85,
+      "best_success": 1.0,
+      "met_threshold": true,
+      "final_eval": {
+        "mean_reward": 154.7706298828125,
+        "std_reward": 56.400936126708984,
+        "mean_length": 157.8,
+        "success_rate": 1.0,
+        "collision_rate": 0.0,
+        "completion_rate": 1.0,
+        "avg_speed": 28.23871534724181
+      },
+      "training_time": 567.7443382740021
+    },
+    "Stage4_All_Blocks": {
+      "blocks": [
+        {
+          "map": "highway-v0",
+          "traffic": 0.35,
+          "label": "HighwayFast"
+        },
+        {
+          "map": "merge-v0",
+          "traffic": 0.4,
+          "label": "MergeTight"
+        },
+        {
+          "map": "intersection-v0",
+          "traffic": 0.4,
+          "label": "IntersectionFull"
+        },
+        {
+          "map": "roundabout-v0",
+          "traffic": 0.45,
+          "label": "RoundaboutHeavy"
+        }
+      ],
+      "shuffle": true,
+      "timesteps_used": 25000,
+      "max_timesteps": 25000,
+      "min_timesteps": 15000,
+      "success_threshold": 0.9,
+      "best_success": 0.6,
+      "met_threshold": false,
+      "final_eval": {
+        "mean_reward": 240.0182342529297,
+        "std_reward": 46.34065628051758,
+        "mean_length": 311.2,
+        "success_rate": 0.4,
+        "collision_rate": 0.6,
+        "completion_rate": 1.0,
+        "avg_speed": 27.80510177833308
+      },
+      "training_time": 754.5775797367096
+    }
+  },
+  "test_results": {
+    "MultiBlock_Heldout": {
+      "map_spec": {
+        "type": "multi_block",
+        "label": "Heldout_MegaMap",
+        "shuffle": true,
+        "blocks": [
+          {
+            "map": "merge-v0",
+            "traffic": 0.45,
+            "label": "MergeTurbo"
+          },
+          {
+            "map": "intersection-v0",
+            "traffic": 0.45,
+            "label": "IntersectionSpoke"
+          },
+          {
+            "map": "highway-v0",
+            "traffic": 0.5,
+            "label": "HighwaySprint"
+          },
+          {
+            "map": "roundabout-v0",
+            "traffic": 0.48,
+            "label": "RoundaboutSpiral"
+          },
+          {
+            "map": "intersection-v0",
+            "traffic": 0.5,
+            "label": "IntersectionCross"
+          }
+        ]
+      },
+      "is_multiblock": true,
+      "mean_reward": 182.2707977294922,
+      "std_reward": 59.66433334350586,
+      "traffic_density": 0.4,
+      "success_rate": 0.6,
+      "collision_rate": 0.4,
+      "completion_rate": 1.0,
+      "eval_time": 28.871480703353882
+    },
+    "Intersection_Stress": {
+      "map_spec": "intersection-v0",
+      "is_multiblock": false,
+      "mean_reward": 15.903996467590332,
+      "std_reward": 7.244729518890381,
+      "traffic_density": 0.45,
+      "success_rate": 0.6,
+      "collision_rate": 0.4,
+      "completion_rate": 0.45999999999999996,
+      "eval_time": 3.2841382026672363
+    },
+    "Merge_Stress": {
+      "map_spec": "merge-v0",
+      "is_multiblock": false,
+      "mean_reward": 34.61509704589844,
+      "std_reward": 1.8834818601608276,
+      "traffic_density": 0.5,
+      "success_rate": 0.0,
+      "collision_rate": 1.0,
+      "completion_rate": 0.8550000000000001,
+      "eval_time": 2.887308120727539
+    },
+    "Roundabout_Stress": {
+      "map_spec": "roundabout-v0",
+      "is_multiblock": false,
+      "mean_reward": 34.099891662597656,
+      "std_reward": 9.7996826171875,
+      "traffic_density": 0.4,
+      "success_rate": 0.8,
+      "collision_rate": 0.2,
+      "completion_rate": 0.9,
+      "eval_time": 10.04856824874878
+    }
+  },
+  "cumulative_timesteps": 95000,
+  "total_training_time": 2073.2334241867065,
+  "training_time_per_timestep": 0.02182350972828112,
+  "metrics_summary": {
+    "training": {
+      "total_episodes": 479,
+      "mean_episode_reward": 175.12369069311066,
+      "final_episode_reward": 116.624714,
+      "mean_episode_length": 196.75782881002087
+    },
+    "evaluation": {
+      "evaluations_performed": 19,
+      "final_mean_reward": 202.85208129882812,
+      "best_mean_reward": 256.6903991699219,
+      "mean_success_rate": 0.368421052631579
+    },
+    "timing": {
+      "train_Stage1_Highway_Low": {
+        "total": 432.84500646591187,
+        "mean": 86.56900129318237,
+        "count": 5
+      },
+      "eval_Stage1_Highway_Low_chunk": {
+        "total": 50.312079429626465,
+        "mean": 10.062415885925294,
+        "count": 5
+      },
+      "train_Stage2_Highway_Merge": {
+        "total": 513.7006962299347,
+        "mean": 102.74013924598694,
+        "count": 5
+      },
+      "eval_Stage2_Highway_Merge_chunk": {
+        "total": 64.32137608528137,
+        "mean": 12.864275217056274,
+        "count": 5
+      },
+      "train_Stage3_Highway_Merge_Intersection": {
+        "total": 495.3365023136139,
+        "mean": 123.83412557840347,
+        "count": 4
+      },
+      "eval_Stage3_Highway_Merge_Intersection_chunk": {
+        "total": 71.95026683807373,
+        "mean": 17.987566709518433,
+        "count": 4
+      },
+      "train_Stage4_All_Blocks": {
+        "total": 631.3512191772461,
+        "mean": 126.27024383544922,
+        "count": 5
+      },
+      "eval_Stage4_All_Blocks_chunk": {
+        "total": 122.79665970802307,
+        "mean": 24.559331941604615,
+        "count": 5
+      }
+    }
+  }
+}
