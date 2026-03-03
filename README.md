@@ -1,4 +1,4 @@
-# CurriculumAutoNav
+# CurriculumLearningforAutonomousDriving
 
 > **Curriculum vs. Non-Curriculum Reinforcement Learning for Autonomous Driving**
 
