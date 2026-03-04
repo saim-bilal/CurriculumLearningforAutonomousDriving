@@ -204,8 +204,8 @@ Total curriculum budget: **650,000 timesteps** (100k + 150k + 200k + 200k).
 
 ## Contributions
 
-* **Raahim A. Samad Poonawala** — Conceptualized and implemented the MetaDrive experiments and curriculum design; performed literature review on RL training mechanisms and reward structures; compiled and analyzed MetaDrive results for the report.
-* **Muhammad Bin Tariq** — Led the literature review and authored the paper’s initial sections (abstract, introduction, problem formulation); conducted preliminary simulations and set up HighwayEnv experiments.
+* **[Raahim A. Samad Poonawala](https://github.com/Raahim58)** — Conceptualized and implemented the MetaDrive experiments and curriculum design; performed literature review on RL training mechanisms and reward structures; compiled and analyzed MetaDrive results for the report.
+* **[Muhammad Bin Tariq](https://github.com/MuhammadBinTariq)** — Led the literature review and authored the paper’s initial sections (abstract, introduction, problem formulation); conducted preliminary simulations and set up HighwayEnv experiments.
 * **Saim Bilal (me)** — Proposed the curriculum‑learning idea; executed the full HighwayEnv training regimen (curriculum and non‑curriculum); compiled and authored the HighwayEnv results and discussion.
 
 ---
